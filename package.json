@@ -1,0 +1,23 @@
+{
+  "name": "modulo04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon src/server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:1000 --files 'public, src/app/views' "
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "intl": "^1.2.5",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "npm-run-all": "^4.1.5"
+  }
+}

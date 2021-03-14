@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}
+            <title> Gym Manager </title>
+        {% endblock %}
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        
+        <header class="pages">
+            <a href="/instructors"> Instructors </a>
+            <a href="/members"> Members </a>
+        </header>
+
+        {% block content %}
+        {% endblock %}
+
+
+        <script src="/scripts.js"></script>
+
+    </body>
+
+</html>
